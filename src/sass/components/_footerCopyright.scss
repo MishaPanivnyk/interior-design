@@ -1,0 +1,27 @@
+.footerCopyright {
+  padding: 15px 0px;
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &-text {
+    color: #424242;
+    text-align: center;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 2.33;
+  }
+  &-icon-list {
+    display: flex;
+    gap: 21px;
+    align-items: center;
+  }
+  &-icon {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+  }
+}
