@@ -1,1 +1,15 @@
-@import './common';
+@import './utils/common';
+@import './utils/reset';
+@import './utils/hidden-classes';
+@import './utils/vars';
+
+// partials
+@import './components/header';
+@import './components/hero';
+@import './components/itemCard';
+@import './components/newArrivals';
+@import './components/clients';
+@import './components/topProduct';
+@import './components/latestArticles';
+@import './components/footer';
+@import './components/footerCopyright';
