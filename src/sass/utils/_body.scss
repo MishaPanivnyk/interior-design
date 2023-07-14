@@ -1,0 +1,20 @@
+body {
+  background-color: var(--background-color);
+  color: var(--primary-text-color);
+
+  font-family: 'Nunito', sans-serif;
+  font-size: 12px;
+}
+
+.btn {
+  cursor: pointer;
+  color: var(--btn-color);
+  background-color: var(--btn-color-bg);
+
+  transition: color var(--time) var(--function-animate),
+    background-color var(--time) var(--function-animate),
+    border var(--time) var(--function-animate);
+}
+button {
+  cursor: pointer;
+}
