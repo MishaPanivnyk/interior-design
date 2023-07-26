@@ -43,20 +43,25 @@
 
 //  // Виклик функції для створення всіх карточок після завантаження сторінки
 //  createAllCards();
-import { articlesItems } from '../latestArticlesItems';
+async function displayLatestArticles() {
+  const { articlesItems } = await import('../latestArticlesItems');
 
-const cardsContainer = document.querySelector('.latestArticles-container'); 
+  const cardsContainer = document.querySelector('.latestArticles-container');
 
-const cardsHtml = articlesItems.map(item => {
-  return `
-    <div class="card">
-      <img class="card-image" src="${item.img}" alt="${item.title}">
-      <h2 class="card-title">${item.title}</h2>
-      <p class="card-date">${item.date}</p>
-      <p class="card-author">${item.author}</p>
-      <p class="card-comments">${item.comments}</p>
-    </div>
-  `;
-});
+  const cardsHtml = articlesItems.map(item => {
+    return `
+      <div class="card">
+        <img class="card-img" src="${item.img}" alt="${item.title}">
+        <h2 class="card-title">${item.title}</h2>
+        <p class="card-date">${item.date}</p>
+        <p class="card-author">${item.author}</p>
+        <p class="card-comments">${item.comments}</p>
+      </div>
+    `;
+  });
 
-cardsContainer.innerHTML = cardsHtml.join('');
+  cardsContainer.innerHTML = cardsHtml.join('');
+}
+
+
+displayLatestArticles();

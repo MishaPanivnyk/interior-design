@@ -1,6 +1,6 @@
 export const articlesItems = [
     {
-      "img": "images/Articles-1.jpg",
+      "img": "./images/Articles-1.jpg",
       "title": "Things to Know When Choosing the Perfect Sofa",
       "date": "05 May",
       "author": "John Doe",
